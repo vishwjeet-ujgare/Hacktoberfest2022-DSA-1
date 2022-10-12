@@ -6,7 +6,8 @@ We aim to help you get started in Open Source contribution by accepting your pul
 requests for programs containing code for any
 **Data Structures and Algorithms problem only**.
 
-## Table of content :
+## Table of contents:-
+
 1. About Hacktober fest 2022
 2. Contributing & Guidelines
 3. How to contribute 
