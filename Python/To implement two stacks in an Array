@@ -1,0 +1,52 @@
+#Function to push an integer into the stack1.
+def push1(a,x):
+    global top1
+    global top2
+    
+    #if there is space between the top of both stacks 
+    #we push the element at top1+1.
+    if top1 < top2-1:
+        top1+=1
+        a[top1] = x
+        
+#Function to push an integer into the stack2.
+def push2(a,x):
+    global top1
+    global top2
+    
+    #if there is space between the top of both stacks 
+    #we push the element at top2-1.
+    if top1 < top2-1:
+        top2-=1
+        a[top2] = x
+
+
+#Function to remove an element from top of the stack1.
+def pop1(a):
+    
+    #if top1==-1, stack1 is empty so we return -1 else we 
+    #return the top element of stack1.
+    global top1
+    if top1 == -1:
+        return -1
+    else:
+        val = a[top1]
+        top1-=1
+        return val
+
+
+
+#Function to remove an element from top of the stack2.
+def pop2(a):
+    global top2
+    
+    #if top2==size of array, stack2 is empty so we return -1 else we 
+    #return the top element of stack2.
+    if top2 == 101:  
+        return -1
+    else:
+        val = a[top2]
+        top2+=1
+        return val
+        
+#This code is contributed by- Esha        
