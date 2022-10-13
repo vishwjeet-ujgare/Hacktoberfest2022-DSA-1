@@ -1,4 +1,5 @@
 #include <iostream>
+#include<bits/stdc++.h>
 using namespace std;
 //Function to print array
 void printArray(int ans[], int n) {
@@ -9,11 +10,13 @@ void printArray(int ans[], int n) {
 }
 //Function to reverse array using an auxiliary array
 void reverseArray(int arr[], int n) {
-   int ans[n];
-   for (int i = n - 1; i >= 0; i--) {
-      ans[n - i - 1] = arr[i];
-   }
-   printArray(ans, n);
+  int s = 0, e = n-1;
+  while(s<=e){
+   swap(arr[s],arr[e]);
+   s++;
+   e--;
+  }
+   printArray(arr,n);
 }
 int main() {
    int n = 5;
